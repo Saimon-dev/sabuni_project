@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendo Soap - About & Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icon library kwa ajili ya kupendezesha alama za mitandao ya kijamii na simu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* CSS ya ziada kwa ajili ya ukurasa huu kufanya uwe wa kisasa zaidi */
+        .about-contact-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .about-side {
+            flex: 1.2;
+            min-width: 300px;
+        }
+
+        .about-side h3 {
+            color: #4a154b;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .about-side p {
+            font-size: 17px;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .contact-side {
+            flex: 1;
+            min-width: 300px;
+            background: #f6eff7;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #4a154b;
+        }
+
+        .contact-side h3 {
+            color: #4a154b;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .contact-item i {
+            font-size: 20px;
+            color: #8e24aa;
+            width: 30px;
+            text-align: center;
+        }
+
+        .contact-item a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .contact-item a:hover {
+            color: #8e24aa;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #4a154b;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background: #8e24aa;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Header -->
+    <header>
+        <a href="index.html" class="logo">🧼 Pendo Soap</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="about.html" class="active">About & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section>
+        <h2 class="section-title">About & Contact Us</h2>
+
+        <div class="about-contact-wrapper">
+
+            <!-- Upande wa About Us (Kushoto) -->
+            <div class="about-side">
+                <h3>Our Story</h3>
+                <p>
+                    Pendo Soap Enterprise is a premier organic soap-making business dedicated to providing natural,
+                    chemical-free skincare solutions. Founded on the values of purity and wellness, we craft each bar
+                    and liquid soap with love and the finest ingredients nature has to offer.
+                </p>
+
+                <h3>Why Choose Our Soaps?</h3>
+                <p>
+                    Unlike commercial brands that use harsh chemicals, we rely on the nourishing properties of lavender
+                    extracts, plant oils, and organic ingredients. Our gentle formulas are perfect for keeping your skin
+                    hydrated, glowing, and smooth.
+                </p>
+
+                <img src="https://images.pexels.com/photos/3751167/pexels-photo-3751167.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Soap Making Process"
+                    style="width: 100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-top: 15px;">
+            </div>
+
+            <!-- Upande wa Contact Us (Kulia) -->
+            <div class="contact-side">
+                <h3>Contact Information</h3>
+
+                <!-- Phone Call -->
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <span style="display:block; font-size: 13px; color: #777;">Phone Call</span>
+                        <a href="tel:+255716309033">+255 716 309 033</a>
+                    </div>
+                </div>
+
+                <!-- WhatsApp Direct Link -->
+                <div class="contact-item">
+                    <i class="fa-brands fa-whatsapp" style="color: #25D366; font-size: 24px;"></i>
+                    <div>
+                        <span style="display:block; font-size: 13px; color: #777;">WhatsApp Chat</span>
+                        <a href="https://wa.me/255716309033" target="_blank">Chat with Us</a>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <span style="display:block; font-size: 13px; color: #777;">Email Address</span>
+                        <a href="mailto:saimonathuman1@gmail.com">saimonathuman1@gmail.com</a>
+                    </div>
+                </div>
+
+                <!-- Physical Location -->
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <span style="display:block; font-size: 13px; color: #777;">Location</span>
+                        <span style="font-weight: 600; color: #333;">Temeke, Dar Es Salaam</span>
+                    </div>
+                </div>
+
+                <!-- Social Media Links -->
+                <div style="margin-top: 35px;">
+                    <h4 style="color: #4a154b; margin-bottom: 10px;">Follow Our Journey</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="social-icon" title="Facebook"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://tiktok.com" target="_blank" class="social-icon" title="TikTok"><i
+                                class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Pendo Soap Enterprise. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

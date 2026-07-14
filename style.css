@@ -1,0 +1,222 @@
+/* 1. Mpangilio Mkuu (Reset & Base Styles) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fcfaff;
+    /* Background nyeupe yenye wepesi wa purple */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 2. Navigation Bar (Menyu ya Juu) */
+header {
+    background-color: #4a154b;
+    /* Purple iliyokoza */
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #e8d5e8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+}
+
+/* 3. Hero Section (Ukurasa wa Nyumbani) */
+.hero {
+    background-image: linear-gradient(rgba(74, 21, 75, 0.7), rgba(74, 21, 75, 0.7)),
+        url('https://images.pexels.com/photos/6621223/pexels-photo-6621223.jpeg?auto=compress&cs=tinysrgb&w=800');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+.btn {
+    background-color: #ffffff;
+    color: #4a154b;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f3e5f5;
+    transform: scale(1.05);
+}
+
+/* 4. Main Content Areas */
+section {
+    padding: 60px 10%;
+}
+
+.section-title {
+    text-align: center;
+    color: #4a154b;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+/* 5. Grid ya Bidhaa (Products Grid) */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+    border: 1px solid #e8d5e8;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-info h3 {
+    color: #4a154b;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-weight: bold;
+    color: #8e24aa;
+    font-size: 18px;
+}
+
+/* 6. Contact Form Section */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(74, 21, 75, 0.05);
+    border: 1px solid #e8d5e8;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4a154b;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #8e24aa;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #4a154b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #6a1b9a;
+}
+
+/* 7. Footer (Mwisho wa Ukurasa) */
+footer {
+    background-color: #310e32;
+    color: #e8d5e8;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
